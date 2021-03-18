@@ -31,4 +31,10 @@ public class MVCController {
         model.addAttribute("user", new User());
         return "Registration";
     }
+    @GetMapping(value = "/login")
+    public String Log(Model model)
+    {
+        //model.addAttribute("user", new User());
+        return "Login";
+    }
 }
